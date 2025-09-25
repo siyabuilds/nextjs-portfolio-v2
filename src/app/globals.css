@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+:root {
+  /* Core Accent Colors */
+  --electric-orange: #ff6b35;
+  --neon-cyan: #00f5d4;
+  --vivid-violet: #9d4edd;
+
+  /* Neutral Base - Light Mode */
+  --off-white: #f8f9fa;
+  --cool-gray: #e5e7eb;
+  --background: var(--off-white);
+  --foreground: #171717;
+
+  /* Supporting Highlights */
+  --steel-blue: #4ea8de;
+  --soft-lime: #c0f000;
+
+  /* Dark Mode Base */
+  --jet-black: #0a0a0a;
+  --charcoal-gray: #1e1e1e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--jet-black);
+    --foreground: #ededed;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+/* Core Accent Color Utility Classes */
+.text-electric-orange {
+  color: var(--electric-orange);
+}
+.bg-electric-orange {
+  background-color: var(--electric-orange);
+}
+.border-electric-orange {
+  border-color: var(--electric-orange);
+}
+
+.text-neon-cyan {
+  color: var(--neon-cyan);
+}
+.bg-neon-cyan {
+  background-color: var(--neon-cyan);
+}
+.border-neon-cyan {
+  border-color: var(--neon-cyan);
+}
+
+.text-vivid-violet {
+  color: var(--vivid-violet);
+}
+.bg-vivid-violet {
+  background-color: var(--vivid-violet);
+}
+.border-vivid-violet {
+  border-color: var(--vivid-violet);
+}
+
+/* Neutral Base Utility Classes */
+.text-off-white {
+  color: var(--off-white);
+}
+.bg-off-white {
+  background-color: var(--off-white);
+}
+
+.text-cool-gray {
+  color: var(--cool-gray);
+}
+.bg-cool-gray {
+  background-color: var(--cool-gray);
+}
+
+.text-jet-black {
+  color: var(--jet-black);
+}
+.bg-jet-black {
+  background-color: var(--jet-black);
+}
+
+.text-charcoal-gray {
+  color: var(--charcoal-gray);
+}
+.bg-charcoal-gray {
+  background-color: var(--charcoal-gray);
+}
+
+/* Supporting Highlights Utility Classes */
+.text-steel-blue {
+  color: var(--steel-blue);
+}
+.bg-steel-blue {
+  background-color: var(--steel-blue);
+}
+.border-steel-blue {
+  border-color: var(--steel-blue);
+}
+
+.text-soft-lime {
+  color: var(--soft-lime);
+}
+.bg-soft-lime {
+  background-color: var(--soft-lime);
+}
+.border-soft-lime {
+  border-color: var(--soft-lime);
+}
+
+/* Glow Effect Utility Classes */
+.glow-orange {
+  box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
+}
+
+.glow-orange-strong {
+  box-shadow: 0 0 30px rgba(255, 107, 53, 0.6);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 245, 212, 0.3);
+}
+
+.glow-cyan-strong {
+  box-shadow: 0 0 30px rgba(0, 245, 212, 0.6);
+}
+
+.glow-violet {
+  box-shadow: 0 0 20px rgba(157, 78, 221, 0.3);
+}
+
+.glow-violet-strong {
+  box-shadow: 0 0 30px rgba(157, 78, 221, 0.6);
+}
+
+/* Hover Glow Effects */
+.hover-glow-orange:hover {
+  box-shadow: 0 0 25px rgba(255, 107, 53, 0.4);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.hover-glow-cyan:hover {
+  box-shadow: 0 0 25px rgba(0, 245, 212, 0.4);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.hover-glow-violet:hover {
+  box-shadow: 0 0 25px rgba(157, 78, 221, 0.4);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Text Glow Effects (for dark mode) */
+.text-glow-orange {
+  text-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 245, 212, 0.5);
+}
+
+.text-glow-violet {
+  text-shadow: 0 0 10px rgba(157, 78, 221, 0.5);
+}
