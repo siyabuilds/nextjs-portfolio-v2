@@ -6,6 +6,7 @@ import {
   Source_Code_Pro,
 } from "next/font/google";
 import Navigation from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -42,6 +43,7 @@ export default function RootLayout({ children }) {
       <body className="bg-charcoal text-white selection:bg-electric-orange/30 selection:text-white">
         <Navigation className="fixed top-0 left-0 right-0 z-50 border-b border-neon-cyan/30" />
         {children}
+        <Footer />
       </body>
     </html>
   );

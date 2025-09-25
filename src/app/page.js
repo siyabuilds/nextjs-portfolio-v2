@@ -4,5 +4,5 @@ export const metadata = {
 };
 
 export default function Home() {
-  return <main className="min-h-screen"></main>;
+  return <main className="min-h-screen pb-20"></main>;
 }
