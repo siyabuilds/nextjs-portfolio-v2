@@ -16,16 +16,16 @@ const GithubIcon = () => (
 const Footer = () => {
   return (
     <footer className="fixed bottom-0 left-0 right-0 z-40 bg-background/80 backdrop-blur-sm border-t border-steel-blue/20">
-      <div className="container mx-auto px-4 py-3">
+      <div className="container mx-auto px-5 py-6">
         <div className="flex justify-center items-center text-sm text-gray-400">
           <Link
-            href="https://github.com/siyabuild"
+            href="https://github.com/siyabuilds"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center space-x-2 hover:text-white transition-colors"
           >
             <GithubIcon />
-            <span>siyabuild</span>
+            <span>siyabuilds</span>
           </Link>
           <span className="mx-2">|</span>
           <span>&copy; Samson 2025</span>
