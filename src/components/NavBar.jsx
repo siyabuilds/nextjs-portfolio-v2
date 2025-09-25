@@ -48,7 +48,7 @@ function NavItem({
       >
         <div className="flex items-center space-x-2">
           {isActive && (
-            <span className="text-electric-orange animate-fade-in font-semibold text-sm">
+            <span className="text-electric-orange animate-slide-in-from-bottom font-semibold text-sm">
               current
             </span>
           )}
@@ -60,8 +60,15 @@ function NavItem({
           >
             {item.name}
           </span>
-          <span className="text-vivid-violet group-hover:rotate-12">
-            {item.symbol}
+          <span className="text-vivid-violet">
+            {item.symbol.split("").map((char, index) => (
+              <span
+                key={index}
+                className="inline-block transition-all duration-300 group-hover:rotate-3 group-hover:scale-105"
+              >
+                {char}
+              </span>
+            ))}
           </span>
         </div>
 
@@ -136,7 +143,7 @@ export default function Navigation() {
       <div className="w-full px-8 md:px-12 lg:px-16 xl:px-20 py-4 mr-2 ml-2">
         <div className="flex justify-between items-center py-2">
           {/* Left: Logo */}
-          <div className="flex-shrink-0 ml-2">
+          <div className="flex-shrink-0">
             <Link
               href="/"
               onClick={() => handleItemClick("logo")}
