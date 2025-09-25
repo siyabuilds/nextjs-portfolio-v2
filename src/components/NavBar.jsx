@@ -140,7 +140,7 @@ export default function Navigation() {
       </div>
 
       {/* Main Flexbox Container with proper spacing */}
-      <div className="container mx-auto px-6 py-4">
+      <div className="w-full px-8 md:px-12 lg:px-16 xl:px-20 py-4 mr-2 ml-2">
         <div className="flex justify-between items-center py-2">
           {/* Left: Logo */}
           <div className="flex-shrink-0">
